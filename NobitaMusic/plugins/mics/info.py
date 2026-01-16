@@ -1,180 +1,150 @@
-import asyncio, os, time, aiohttp
-from pathlib import Path
-from PIL import Image, ImageDraw, ImageFont
-from asyncio import sleep
-from NobitaMusic import app
-from pyrogram import filters, Client, enums
-from pyrogram.enums import ParseMode
-from pyrogram.types import *
-from pyrogram.types import InlineQueryResultArticle, InputTextMessageContent, InlineKeyboardMarkup, InlineKeyboardButton
+import os
 from typing import Union, Optional
+from PIL import Image, ImageDraw, ImageFont
+
+from pyrogram import filters, enums
+from pyrogram.enums import ParseMode
+from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton
+
+from NobitaMusic import app
+
+# ================= BUTTON ================= #
 
 EVAA = [
     [
-        InlineKeyboardButton(text="ᴀᴅᴅ ᴍᴇ ʙᴀʙʏ", url=f"https://t.me/NobitaMusicsRobot?startgroup=true"),
+        InlineKeyboardButton(
+            text="ᴀᴅᴅ ᴍᴇ ʙᴀʙʏ",
+            url="https://t.me/NobitaMusicsRobot?startgroup=true"
+        ),
     ],
 ]
 
-get_font = lambda font_size, font_path: ImageFont.truetype(font_path, font_size)
-resize_text = (
-    lambda text_size, text: (text[:text_size] + "...").upper()
-    if len(text) > text_size
-    else text.upper()
-)
-
-# --------------------------------------------------------------------------------- #
-
+# ================= IMAGE MAKER ================= #
 
 async def get_userinfo_img(
     bg_path: str,
-    font_path: str,
-    user_id: Union[int, str],    
+    user_id: Union[int, str],
     profile_path: Optional[str] = None
 ):
-    bg = Image.open(bg_path)
+    bg = Image.open(bg_path).convert("RGBA")
 
     if profile_path:
-        img = Image.open(profile_path)
+        img = Image.open(profile_path).convert("RGBA")
         mask = Image.new("L", img.size, 0)
         draw = ImageDraw.Draw(mask)
-        draw.pieslice([(0, 0), img.size], 0, 360, fill=255)
+        draw.ellipse((0, 0, img.size[0], img.size[1]), fill=255)
 
-        circular_img = Image.new("RGBA", img.size, (0, 0, 0, 0))
-        circular_img.paste(img, (0, 0), mask)
-        resized = circular_img.resize((534, 534))
-        bg.paste(resized, (607, 86), resized)
+        img.putalpha(mask)
+        img = img.resize((534, 534))
+        bg.paste(img, (607, 86), img)
 
-    img_draw = ImageDraw.Draw(bg)
-
-    
-
-    path = f"./userinfo_img_{user_id}.png"
+    path = f"./userinfo_{user_id}.png"
     bg.save(path)
     return path
-   
 
-# --------------------------------------------------------------------------------- #
+
+# ================= CONFIG ================= #
 
 bg_path = "NobitaMusic/assets/RISHUINFO.png"
-font_path = "NobitaMusic/assets/hiroko.ttf"
-
-#
-# --------------------------------------------------------------------------------- #
-
 
 INFO_TEXT = """
-ㅤ◦•●◉✿ ᴜsᴇʀ ɪɴғᴏʀᴍᴀᴛɪᴏɴ  ✿◉●•◦
+ㅤ◦•●◉✿ **USER INFORMATION** ✿◉●•◦
 ▬▭▬▭▬▭▬▭▬▭▬▭▬▭
 
-❍ ᴜsᴇʀ ɪᴅ ɴᴏ. ▷ `{}`
-❍ ᴜsᴇʀɴᴇᴍᴇ ▷ @{} 
-❍ ᴍᴇɴᴛɪᴏɴ ▷ {}
-❍ sᴛᴀᴛᴜs ▷ `{}`
-❍ ᴅᴄ ɪᴅ ▷ {}
-❍ ʙɪᴏ ▷ {}
+❍ **ᴜsᴇʀ ɪᴅ** ▷ `{}`  
+❍ **ᴜsᴇʀɴᴀᴍᴇ** ▷ `{}` 
+❍ **ᴍᴇɴᴛɪᴏɴ** ▷ `{}` 
+❍ **sᴛᴀᴛᴜs** ▷ `{}`  
+❍ **ᴅᴄ ɪᴅ** ▷ `{}`  
+❍ **ʙɪᴏ** ▷ `{}`  
 
-❖ ᴍᴀᴅᴇ ʙʏ  ➛ [𝚴 𝐎 𝐁 𝚰 𝐓 𝚲](https://t.me/II_YOUR_NOBITA_II)
+❖ **ᴍᴀᴅᴇ ʙʏ** ➛ [𝚴 𝐎 𝐁 𝚰 𝐓 𝚲](https://t.me/II_YOUR_NOBITA_II)
 ▬▭▬▭▬▭▬▭▬▭▬▭▬▭
-
 """
 
-# --------------------------------------------------------------------------------- #
+# ================= STATUS ================= #
 
 async def userstatus(user_id):
-   try:
-      user = await app.get_users(user_id)
-      x = user.status
-      if x == enums.UserStatus.RECENTLY:
-         return "User was seen recently."
-      elif x == enums.UserStatus.LAST_WEEK:
-          return "User was seen last week."
-      elif x == enums.UserStatus.LONG_AGO:
-          return "User was seen long ago."
-      elif x == enums.UserStatus.OFFLINE:
-          return "User is offline."
-      elif x == enums.UserStatus.ONLINE:
-         return "User is online."
-   except:
-        return "**✦ sᴏᴍᴇᴛʜɪɴɢ ᴡʀᴏɴɢ ʜᴀᴘᴘᴇɴᴇᴅ !**"
-    
+    try:
+        user = await app.get_users(user_id)
+        x = user.status
+        if x == enums.UserStatus.ONLINE:
+            return "Online"
+        elif x == enums.UserStatus.OFFLINE:
+            return "Offline"
+        elif x == enums.UserStatus.RECENTLY:
+            return "Recently"
+        elif x == enums.UserStatus.LAST_WEEK:
+            return "Last week"
+        elif x == enums.UserStatus.LONG_AGO:
+            return "Long ago"
+    except:
+        return "Unknown"
 
-# --------------------------------------------------------------------------------- #
 
-@app.on_message(filters.command(["info", "information", "userinfo"], prefixes=["/", "!", "%", ",", "", ".", "@", "#"]))
+# ================= COMMAND ================= #
+
+@app.on_message(filters.command(["info", "userinfo", "information"]))
 async def userinfo(_, message):
+
     chat_id = message.chat.id
-    user_id = message.from_user.id
-    
-    if not message.reply_to_message and len(message.command) == 2:
-        try:
-            user_id = message.text.split(None, 1)[1]
-            user_info = await app.get_chat(user_id)
-            user = await app.get_users(user_id)
-            status = await userstatus(user.id)
-            id = user_info.id
-            dc_id = user.dc_id
-            name = user_info.first_name
-            username = user_info.username
-            mention = user.mention
-            bio = user_info.bio
-            photo = await app.download_media(user.photo.big_file_id)
-            welcome_photo = await get_userinfo_img(
-                bg_path=bg_path,
-                font_path=font_path,
-                user_id=user_id,
-                profile_path=photo,
-            )
-            await app.send_photo(chat_id, photo=welcome_photo, caption=INFO_TEXT.format(
-                id, username, mention, status, dc_id, bio), reply_to_message_id=message.id, reply_markup=InlineKeyboardMarkup(EVAA),)
-        except Exception as e:
-            await message.reply_text(str(e))        
-      
-    elif not message.reply_to_message:
-        try:
-            user_info = await app.get_chat(user_id)
-            user = await app.get_users(user_id)
-            status = await userstatus(user.id)
-            id = user_info.id
-            dc_id = user.dc_id
-            name = user_info.first_name
-            username = user_info.username
-            mention = user.mention
-            bio = user_info.bio
-            photo = await app.download_media(user.photo.big_file_id)
-            welcome_photo = await get_userinfo_img(
-                bg_path=bg_path,
-                font_path=font_path,
-                user_id=user_id,
-                profile_path=photo,
-            )
-            await app.send_photo(chat_id, photo=welcome_photo, caption=INFO_TEXT.format(
-                id, username, mention, status, dc_id, bio), reply_to_message_id=message.id, reply_markup=InlineKeyboardMarkup(EVAA),)
-        except Exception as e:
-            await message.reply_text(str(e))
+    is_group = message.chat.type in ["group", "supergroup"]
 
-            
-    elif message.reply_to_message:
-        user_id = message.reply_to_message.from_user.id
-        try:
-            user_info = await app.get_chat(user_id)
-            user = await app.get_users(user_id)
-            status = await userstatus(user.id)
-            id = user_info.id
-            dc_id = user.dc_id
-            name = user_info.first_name
-            username = user_info.username
-            mention = user.mention
-            bio = user_info.bio
-            photo = await app.download_media(message.reply_to_message.from_user.photo.big_file_id)
-            welcome_photo = await get_userinfo_img(
-                bg_path=bg_path,
-                font_path=font_path,
-                user_id=user_id,
-                profile_path=photo,
-            )
-            await app.send_photo(chat_id, photo=welcome_photo, caption=INFO_TEXT.format(
-                id, username, mention, status, dc_id, bio), reply_to_message_id=message.id, reply_markup=InlineKeyboardMarkup(EVAA),)
-        except Exception as e:
-            await message.reply_text(str(e))
+    # -------- TARGET USER -------- #
+    if message.reply_to_message:
+        target = message.reply_to_message.from_user
+    elif len(message.command) > 1:
+        target = await app.get_users(message.command[1])
+    else:
+        target = message.from_user
 
-####
+    user = await app.get_users(target.id)
+    chat = await app.get_chat(target.id)
+
+    status = await userstatus(user.id)
+
+    user_id = chat.id
+    username = f"@{chat.username}" if chat.username else "None"
+    mention = user.mention
+    dc_id = user.dc_id or "N/A"
+    bio = chat.bio or "No bio"
+
+    caption = INFO_TEXT.format(
+        user_id,
+        username,
+        mention,
+        status,
+        dc_id,
+        bio
+    )
+
+    # ================= GROUP = TEXT ONLY ================= #
+    if is_group:
+        await message.reply_text(
+            caption,
+            reply_markup=InlineKeyboardMarkup(EVAA),
+            parse_mode=ParseMode.MARKDOWN
+        )
+        return
+
+    # ================= PRIVATE = IMAGE + TEXT ================= #
+    photo = None
+    if user.photo:
+        photo = await app.download_media(user.photo.big_file_id)
+
+    img = await get_userinfo_img(
+        bg_path=bg_path,
+        user_id=user_id,
+        profile_path=photo
+    )
+
+    await app.send_photo(
+        chat_id,
+        photo=img,
+        caption=caption,
+        reply_markup=InlineKeyboardMarkup(EVAA),
+        parse_mode=ParseMode.MARKDOWN
+    )
+
+    if os.path.exists(img):
+        os.remove(img)
