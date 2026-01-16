@@ -73,7 +73,7 @@ async def userinfo(_, message):
 
     user_id = chat.id
     username = f"@{chat.username}" if chat.username else "None"
-    mention = user.mention
+    mention = f"[{user.first_name}](tg://user?id={user.id})"
     dc_id = user.dc_id or "N/A"
     bio = chat.bio or "No bio"
 
