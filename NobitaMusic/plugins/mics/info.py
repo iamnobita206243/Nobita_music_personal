@@ -1,12 +1,7 @@
-import os
-from typing import Union, Optional
-from PIL import Image, ImageDraw, ImageFont
-
+from NobitaMusic import app
 from pyrogram import filters, enums
 from pyrogram.enums import ParseMode
 from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton
-
-from NobitaMusic import app
 
 # ================= BUTTON ================= #
 
@@ -19,46 +14,20 @@ EVAA = [
     ],
 ]
 
-# ================= IMAGE MAKER ================= #
-
-async def get_userinfo_img(
-    bg_path: str,
-    user_id: Union[int, str],
-    profile_path: Optional[str] = None
-):
-    bg = Image.open(bg_path).convert("RGBA")
-
-    if profile_path:
-        img = Image.open(profile_path).convert("RGBA")
-        mask = Image.new("L", img.size, 0)
-        draw = ImageDraw.Draw(mask)
-        draw.ellipse((0, 0, img.size[0], img.size[1]), fill=255)
-
-        img.putalpha(mask)
-        img = img.resize((534, 534))
-        bg.paste(img, (607, 86), img)
-
-    path = f"./userinfo_{user_id}.png"
-    bg.save(path)
-    return path
-
-
-# ================= CONFIG ================= #
-
-bg_path = "NobitaMusic/assets/RISHUINFO.png"
+# ================= INFO TEXT ================= #
 
 INFO_TEXT = """
-ㅤ◦•●◉✿ **USER INFORMATION** ✿◉●•◦
+ㅤ◦•●◉✿ ᴜsᴇʀ ɪɴғᴏʀᴍᴀᴛɪᴏɴ ✿◉●•◦
 ▬▭▬▭▬▭▬▭▬▭▬▭▬▭
 
-❍ **ᴜsᴇʀ ɪᴅ** ▷ `{}`  
-❍ **ᴜsᴇʀɴᴀᴍᴇ** ▷ `{}` 
-❍ **ᴍᴇɴᴛɪᴏɴ** ▷ `{}` 
-❍ **sᴛᴀᴛᴜs** ▷ `{}`  
-❍ **ᴅᴄ ɪᴅ** ▷ `{}`  
-❍ **ʙɪᴏ** ▷ `{}`  
+❍ ᴜsᴇʀ ɪᴅ ɴᴏ. ▷ `{}`  
+❍ ᴜsᴇʀɴᴇᴍᴇ ▷ {}  
+❍ ᴍᴇɴᴛɪᴏɴ ▷ {}  
+❍ sᴛᴀᴛᴜs ▷ `{}`  
+❍ ᴅᴄ ɪᴅ ▷ `{}`  
+❍ ʙɪᴏ ▷ `{}`  
 
-❖ **ᴍᴀᴅᴇ ʙʏ** ➛ [𝚴 𝐎 𝐁 𝚰 𝐓 𝚲](https://t.me/II_YOUR_NOBITA_II)
+❖ ᴍᴀᴅᴇ ʙʏ ➛ [𝚴 𝐎 𝐁 𝚰 𝐓 𝚲](https://t.me/II_YOUR_NOBITA_II)
 ▬▭▬▭▬▭▬▭▬▭▬▭▬▭
 """
 
@@ -75,25 +44,24 @@ async def userstatus(user_id):
         elif x == enums.UserStatus.RECENTLY:
             return "Recently"
         elif x == enums.UserStatus.LAST_WEEK:
-            return "Last week"
+            return "Last Week"
         elif x == enums.UserStatus.LONG_AGO:
-            return "Long ago"
+            return "Long Ago"
     except:
         return "Unknown"
 
-
 # ================= COMMAND ================= #
 
-@app.on_message(filters.command(["info", "userinfo", "information"]))
+@app.on_message(filters.command(
+    ["info", "information", "userinfo"],
+    prefixes=["/", "!", "%", ",", ".", "@", "#"]
+))
 async def userinfo(_, message):
-
-    chat_id = message.chat.id
-    is_group = message.chat.type in ["group", "supergroup"]
 
     # -------- TARGET USER -------- #
     if message.reply_to_message:
         target = message.reply_to_message.from_user
-    elif len(message.command) > 1:
+    elif len(message.command) == 2:
         target = await app.get_users(message.command[1])
     else:
         target = message.from_user
@@ -109,7 +77,7 @@ async def userinfo(_, message):
     dc_id = user.dc_id or "N/A"
     bio = chat.bio or "No bio"
 
-    caption = INFO_TEXT.format(
+    text = INFO_TEXT.format(
         user_id,
         username,
         mention,
@@ -118,33 +86,9 @@ async def userinfo(_, message):
         bio
     )
 
-    # ================= GROUP = TEXT ONLY ================= #
-    if is_group:
-        await message.reply_text(
-            caption,
-            reply_markup=InlineKeyboardMarkup(EVAA),
-            parse_mode=ParseMode.MARKDOWN
-        )
-        return
-
-    # ================= PRIVATE = IMAGE + TEXT ================= #
-    photo = None
-    if user.photo:
-        photo = await app.download_media(user.photo.big_file_id)
-
-    img = await get_userinfo_img(
-        bg_path=bg_path,
-        user_id=user_id,
-        profile_path=photo
-    )
-
-    await app.send_photo(
-        chat_id,
-        photo=img,
-        caption=caption,
+    # ===== ONLY TEXT OUTPUT ===== #
+    await message.reply_text(
+        text,
         reply_markup=InlineKeyboardMarkup(EVAA),
         parse_mode=ParseMode.MARKDOWN
     )
-
-    if os.path.exists(img):
-        os.remove(img)
