@@ -24,7 +24,7 @@ async def start(_, msg):
           InlineKeyboardButton("✙ ᴀᴅᴅ ᴍᴇ ✙", url=f"https://t.me/NobitaMusicsRobot?startgroup=true")
         ],
         [
-          InlineKeyboardButton("• ʜᴇʟᴘ •", url="https://t.me/+Ybl7EeBVeoxiYTJl"),
+          InlineKeyboardButton("• ʜᴇʟᴘ •", url="https://t.me/+wtkHZMKvOERiMzY1"),
           InlineKeyboardButton("• ᴏᴡɴᴇʀ •", url="https://t.me/II_YOUR_NOBITA_II"),
           ],
                [
