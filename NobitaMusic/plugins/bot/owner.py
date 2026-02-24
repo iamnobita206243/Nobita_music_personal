@@ -15,9 +15,11 @@ start_txt = """
 │├─────────────────╯
 ├┼─────────────────⦿
 ├┤~ @NOBITA_SUPP0RT
-├┤~ @TEAMDVL01
+├┤~ @DEFAULTERS_ERA
 ├┤~ @NobitaMusicsRobot
 ├┤~ @VanshikaaMusicBot
+├┤~ @SigmaMusicsBot
+├┤~ @AppleMusicRobot
 ├┼─────────────────⦿
 │├─────────────────╮
 │├OWNER│ @II_YOUR_NOBITA_II
@@ -36,11 +38,11 @@ async def start(_, msg):
           InlineKeyboardButton("𝚴 𝐎 𝐁 𝚰 𝐓 𝚲 ", url=f"https://t.me/II_YOUR_NOBITA_II")
         ],
         [
-          InlineKeyboardButton("ＨＥＬＰ", url="https://t.me/+Ybl7EeBVeoxiYTJl"),
+          InlineKeyboardButton("ＨＥＬＰ", url="https://t.me/+MytF4Bvu4z8xNDU1"),
           InlineKeyboardButton("ＲＥＰＯ", url="https://t.me/NOBITA_SUPP0RT"),
           ],
                [
-                InlineKeyboardButton(" ＮＥＴＷＯＲＫ", url=f"https://t.me/NOBITA_SUPP0RT"),
+                InlineKeyboardButton(" ＮＥＴＷＯＲＫ", url=f"https://t.me/DEFAULTERS_ERA"),
 ],
 [
 InlineKeyboardButton("ＯＦＦＩＣＩＡＬ ＢＯＴ", url=f"https://t.me/NobitaMusicsRobot"),
