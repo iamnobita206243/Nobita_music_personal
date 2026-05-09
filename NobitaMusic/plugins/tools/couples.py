@@ -15,7 +15,7 @@ POLICE = [
     [
         InlineKeyboardButton(
             text="• ᴀᴅᴅ ᴍᴇ ʙᴀʙʏ •",
-            url=f"https://t.me/NobitaMusicsRobot?startgroup=true",
+            url=f"https://t.me/DefaultersMusicRobot?startgroup=true",
         ),
     ],
 ]
@@ -114,7 +114,7 @@ async def ctest(_, message):
 ❖ ɴᴇxᴛ ᴄᴏᴜᴘʟᴇ sᴇʟᴇᴄᴛᴇᴅ ᴏɴ 
 ❖ ᴅᴀᴛᴇ -`{tomorrow}`
 
-❖ ᴍᴀᴅᴇ ʙʏ  ➛ [𝚴 𝐎 𝐁 𝚰 𝐓 𝚲](https://t.me/II_YOUR_NOBITA_II)
+❖ ᴍᴀᴅᴇ ʙʏ  ➛ [𝚴 𝐎 𝐁 𝚰 𝐓 𝚲](https://t.me/II_NOBITA_DEFAULTERS_II)
 ▬▭▬▭▬▭▬▭▬▭▬▭▬▭▬▭**
 """
     
