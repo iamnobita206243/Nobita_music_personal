@@ -9,7 +9,7 @@ EVAA = [
     [
         InlineKeyboardButton(
             text="ᴀᴅᴅ ᴍᴇ ʙᴀʙʏ",
-            url="https://t.me/NobitaMusicsRobot?startgroup=true"
+            url="https://t.me/AuraMusiccRobot?startgroup=true"
         ),
     ],
 ]
@@ -27,7 +27,7 @@ INFO_TEXT = """
 ❍ ᴅᴄ ɪᴅ ▷ `{}`  
 ❍ ʙɪᴏ ▷ `{}`  
 
-❖ ᴍᴀᴅᴇ ʙʏ ➛ [𝚴 𝐎 𝐁 𝚰 𝐓 𝚲](https://t.me/II_YOUR_NOBITA_II)
+❖ ᴍᴀᴅᴇ ʙʏ ➛ [𝚴 𝐎 𝐁 𝚰 𝐓 𝚲](https://t.me/II_NOBITA_DEFAULTERS_II)
 ▬▭▬▭▬▭▬▭▬▭▬▭▬▭
 """
 
