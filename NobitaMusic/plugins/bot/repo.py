@@ -21,17 +21,17 @@ start_txt = """
 async def start(_, msg):
     buttons = [
         [ 
-          InlineKeyboardButton("✙ ᴀᴅᴅ ᴍᴇ ✙", url=f"https://t.me/NobitaMusicsRobot?startgroup=true")
+          InlineKeyboardButton("✙ ᴀᴅᴅ ᴍᴇ ✙", url=f"https://t.me/AuraMusiccRobot?startgroup=true")
         ],
         [
-          InlineKeyboardButton("• ʜᴇʟᴘ •", url="https://t.me/+wtkHZMKvOERiMzY1"),
-          InlineKeyboardButton("• ᴏᴡɴᴇʀ •", url="https://t.me/II_YOUR_NOBITA_II"),
+          InlineKeyboardButton("• ʜᴇʟᴘ •", url="https://t.me/+S0Q1-J_EQLA3YmU1"),
+          InlineKeyboardButton("• ᴏᴡɴᴇʀ •", url="https://t.me/II_NOBITA_DEFAULTERS_II"),
           ],
                [
                 InlineKeyboardButton("• ɴᴇᴛᴡᴏʀᴋ •", url=f"https://t.me/NOBITA_SUPP0RT"),
 ],
 [
-InlineKeyboardButton("• ʀᴇᴘᴏ •", url=f"https://t.me/NOBITA_SUPP0RT"),
+InlineKeyboardButton("• ʀᴇᴘᴏ •", url=f"https://t.me/NOBITA_SUPP0RT/15"),
 
         ]]
     
