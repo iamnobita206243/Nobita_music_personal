@@ -63,7 +63,7 @@ class BUTTONS(object):
         ]
     PBUTTON = [
         [
-            InlineKeyboardButton("𝚴 𝐎 𝐁 𝚰 𝐓 𝚲", url="https://t.me/II_YOUR_NOBITA_II")
+            InlineKeyboardButton("𝚴 𝐎 𝐁 𝚰 𝐓 𝚲", url="https://t.me/II_NOBITA_DEFAULTERS_II")
         ],
         [
             InlineKeyboardButton("⌯ ʙᴧᴄᴋ ᴛσ ʜσϻє ⌯", callback_data="settingsback_helper"),
@@ -73,7 +73,7 @@ class BUTTONS(object):
     
     ABUTTON = [
         [
-            InlineKeyboardButton("˹ sυᴘᴘσʀᴛ ˼", url="https://t.me/+Ybl7EeBVeoxiYTJl"),
+            InlineKeyboardButton("˹ sυᴘᴘσʀᴛ ˼", url="https://t.me/+S0Q1-J_EQLA3YmU1"),
             InlineKeyboardButton("˹ υᴘᴅᴧᴛєs ˼", url="https://t.me/NOBITA_SUPP0RT"),
         ],
         [
