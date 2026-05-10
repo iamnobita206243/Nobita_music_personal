@@ -19,9 +19,13 @@ LOGGER_ID = int(getenv("LOGGER_ID", -1002344707828))
 OWNER_ID = int(getenv("OWNER_ID", None))
 HEROKU_APP_NAME = getenv("HEROKU_APP_NAME")
 HEROKU_API_KEY = getenv("HEROKU_API_KEY")
+#Music Api
+
 API_URL = getenv("API_URL", 'https://api.nexgenbots.xyz') #youtube song url
-VIDEO_API_URL = getenv("VIDEO_API_URL", 'https://api.video.thequickearn.xyz')
-API_KEY = getenv("API_KEY", '30DxNexGenBotsf5f8cf')
+VIDEO_API_URL = getenv("VIDEO_API_URL", 'https://api.video.nexgenbots.xyz')
+API_KEY = getenv("API_KEY", "30DxNexGenBots5c0310") # youtube song api key, generate free key or buy paid plan from https://console.nexgenbots.xyz
+
+API2_URL = getenv("API2_URL", "https://shrutibots.site")
 UPSTREAM_REPO = getenv("UPSTREAM_REPO", "https://github.com/iamnobita206243/Nobita_music_personal",)
 UPSTREAM_BRANCH = getenv("UPSTREAM_BRANCH", "main")
 GIT_TOKEN = getenv("GIT_TOKEN", None)
