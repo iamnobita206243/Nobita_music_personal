@@ -6,7 +6,7 @@ from NobitaMusic import app
 
 # Channels to enforce join
 MUST_JOIN_1 = "NOBITA_SUPP0RT"
-MUST_JOIN_2 = "TEAMDVL01"
+MUST_JOIN_2 = "DEFAULTERS_ERA"
 
 # List of random images
 IMAGES = [
