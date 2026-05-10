@@ -33,7 +33,7 @@ class Helper(object):
 ❍ /ask ➠ ǫυєʀɪєs ᴛʜє ᴧɪ ϻσᴅєʟ ᴛσ ɢєᴛ ᴧ ʀєsᴘσηsє ᴛσ ʏσυʀ ǫυєsᴛɪση
 
 
-❖ ϻᴧᴅє ʙʏ  ➠ [𝚴 𝐎 𝐁 𝚰 𝐓 𝚲](https://t.me/II_YOUR_NOBITA_II) **
+❖ ϻᴧᴅє ʙʏ  ➠ [𝚴 𝐎 𝐁 𝚰 𝐓 𝚲](https://t.me/II_NOBITA_DEFAULTERS_II) **
 '''
 
 
@@ -47,7 +47,7 @@ class Helper(object):
 ```
 ❖ єxᴧϻᴘʟє : /google ᴘʏʀσɢʀᴧϻ : ʀєᴛυʀη ᴛσᴘ 5 ʀєυsʟᴛs ```
 
-**❖ ϻᴧᴅє ʙʏ  ➠ [𝚴 𝐎 𝐁 𝚰 𝐓 𝚲](https://t.me/II_YOUR_NOBITA_II) **
+**❖ ϻᴧᴅє ʙʏ  ➠ [𝚴 𝐎 𝐁 𝚰 𝐓 𝚲](https://t.me/II_NOBITA_DEFAULTERS_II) **
 '''
 
     HELP_03 = '''```
@@ -58,7 +58,7 @@ class Helper(object):
 
 ❍ /tts : [ᴛєxᴛ]
 
-❖ ϻᴧᴅє ʙʏ  ➠ [𝚴 𝐎 𝐁 𝚰 𝐓 𝚲](https://t.me/II_YOUR_NOBITA_II) **
+❖ ϻᴧᴅє ʙʏ  ➠ [𝚴 𝐎 𝐁 𝚰 𝐓 𝚲](https://t.me/II_NOBITA_DEFAULTERS_II) **
 '''
 
 
@@ -67,7 +67,7 @@ class Helper(object):
 **❍ /id : ɢєᴛ ᴛʜє ᴄυʀʀєηᴛ ɢʀσυᴘ ɪᴅ. ɪғ υsєᴅ ʙʏ ʀєᴘʟʏɪηɢ ᴛσ ᴧ ϻєssᴧɢє, ɢєᴛs ᴛʜᴧᴛ υsєʀ's ɪᴅ
 ❍ /info : ɢєᴛ ɪηғσʀϻᴧᴛɪση ᴧʙσυᴛ ᴧ υsєʀ.
 
-❖ ϻᴧᴅє ʙʏ  ➠ [𝚴 𝐎 𝐁 𝚰 𝐓 𝚲](https://t.me/II_YOUR_NOBITA_II) **
+❖ ϻᴧᴅє ʙʏ  ➠ [𝚴 𝐎 𝐁 𝚰 𝐓 𝚲](https://t.me/II_NOBITA_DEFAULTERS_II) **
 '''
 
 
@@ -80,7 +80,7 @@ class Helper(object):
 ```
 ❖ єxᴧϻᴘʟє : /font Nobita```
 
-**❖ ϻᴧᴅє ʙʏ  ➠ [𝚴 𝐎 𝐁 𝚰 𝐓 𝚲](https://t.me/II_YOUR_NOBITA_II) **
+**❖ ϻᴧᴅє ʙʏ  ➠ [𝚴 𝐎 𝐁 𝚰 𝐓 𝚲](https://t.me/II_NOBITA_DEFAULTERS_II) **
 '''
 
     HELP_06 = '''```
@@ -88,7 +88,7 @@ class Helper(object):
 
 **❍ /math ➠ sσʟᴠєs ϻᴧᴛʜєϻᴧᴛɪᴄᴧʟ ᴘʀσʙʟєϻs ᴧηᴅ ǫυᴧᴛɪσηs
 
-❖ ϻᴧᴅє ʙʏ  ➠ [𝚴 𝐎 𝐁 𝚰 𝐓 𝚲](https://t.me/II_YOUR_NOBITA_II) **
+❖ ϻᴧᴅє ʙʏ  ➠ [𝚴 𝐎 𝐁 𝚰 𝐓 𝚲](https://t.me/II_NOBITA_DEFAULTERS_II) **
 '''
 
 
@@ -116,7 +116,7 @@ class Helper(object):
 ❍ /vctag ➠ ᴠσɪᴄє ᴄʜᴧᴛ ɪηᴠɪᴛє ᴛᴧɢ 
 ❍ /vcstop ⇴ sᴛσᴘ ᴛᴧɢ
 
-❖ ϻᴧᴅє ʙʏ  ➠ [𝚴 𝐎 𝐁 𝚰 𝐓 𝚲](https://t.me/II_YOUR_NOBITA_II) **
+❖ ϻᴧᴅє ʙʏ  ➠ [𝚴 𝐎 𝐁 𝚰 𝐓 𝚲](https://t.me/II_NOBITA_DEFAULTERS_II) **
 '''
 
 
@@ -127,7 +127,7 @@ class Helper(object):
 ❍ /image ➠ sєᴧʀᴄʜєs ғσʀ ᴧη ɪϻᴧɢє ʙᴧsєᴅ ση ᴧ ɢɪᴠєη ᴋєʏᴡσʀᴅ.
 ❍ /upscale ➠ ʀєᴘʟʏ ᴛσ ᴧη ɪϻᴧɢє ᴛσ υᴘsᴄᴧʟє ɪᴛ ᴧηᴅ ɪϻᴘʀσᴠє ɪᴛs ǫυᴧʟɪᴛʏ.
 
-❖ ϻᴧᴅє ʙʏ  ➠ [𝚴 𝐎 𝐁 𝚰 𝐓 𝚲](https://t.me/II_YOUR_NOBITA_II) **
+❖ ϻᴧᴅє ʙʏ  ➠ [𝚴 𝐎 𝐁 𝚰 𝐓 𝚲](https://t.me/II_NOBITA_DEFAULTERS_II) **
 '''
 
 
@@ -141,7 +141,7 @@ class Helper(object):
 
 ❍ /hastag : [ᴛєxᴛ]
 
-❖ ϻᴧᴅє ʙʏ  ➠ [𝚴 𝐎 𝐁 𝚰 𝐓 𝚲](https://t.me/II_YOUR_NOBITA_II) **
+❖ ϻᴧᴅє ʙʏ  ➠ [𝚴 𝐎 𝐁 𝚰 𝐓 𝚲](https://t.me/II_NOBITA_DEFAULTERS_II) **
 '''
 
 
@@ -151,7 +151,7 @@ class Helper(object):
 **❍ /packkang ➠ ᴄʀєᴧᴛєs ᴧ ᴘᴧᴄᴋ σғ sᴛɪᴄᴋєʀs ғʀσϻ ᴧ σᴛʜєʀ ᴘᴧᴄᴋ
 ❍ /stickerid ➠ ɢєᴛs ᴛʜє sᴛɪᴄᴋєʀ ɪᴅ σғ ᴧ sᴛɪᴄᴋєʀ
 
-**❖ ϻᴧᴅє ʙʏ  ➠ [𝚴 𝐎 𝐁 𝚰 𝐓 𝚲](https://t.me/II_YOUR_NOBITA_II) **
+**❖ ϻᴧᴅє ʙʏ  ➠ [𝚴 𝐎 𝐁 𝚰 𝐓 𝚲](https://t.me/II_NOBITA_DEFAULTERS_II) **
 '''
 
 
@@ -176,7 +176,7 @@ class Helper(object):
 ❍ /boobs [ᴄʜєᴄᴋ ʏσυʀ ʙσσʙɪєs sɪᴢє]
 ❍ /dick [ᴄʜєᴄᴋ ʏσυʀ ᴅɪᴄᴋ sɪᴢє]
 
-❖ ϻᴧᴅє ʙʏ  ➠ [𝚴 𝐎 𝐁 𝚰 𝐓 𝚲](https://t.me/II_YOUR_NOBITA_II) **
+❖ ϻᴧᴅє ʙʏ  ➠ [𝚴 𝐎 𝐁 𝚰 𝐓 𝚲](https://t.me/II_NOBITA_DEFAULTERS_II) **
 '''
 
 
@@ -188,7 +188,7 @@ class Helper(object):
 ❍ /q : ᴄʀєᴧᴛє ᴧ ǫυσᴛє ғʀσϻ ᴛʜє ϻєssᴧɢє
 ❍ /q r : ᴄʀєᴧᴛє ᴧ ǫυσᴛє ғʀσϻ ᴛʜє ϻєssᴧɢє ᴡɪᴛʜ ʀєᴘʟʏ
 
-❖ ϻᴧᴅє ʙʏ  ➠ [𝚴 𝐎 𝐁 𝚰 𝐓 𝚲](https://t.me/II_YOUR_NOBITA_II) **
+❖ ϻᴧᴅє ʙʏ  ➠ [𝚴 𝐎 𝐁 𝚰 𝐓 𝚲](https://t.me/II_NOBITA_DEFAULTERS_II) **
 '''
 
 
@@ -200,7 +200,7 @@ class Helper(object):
 ❍ /truth : sєηᴅs ᴧ ʀᴧηᴅσϻ ᴛʀυᴛʜ sᴛʀɪηɢ
 ❍ /dare : sєηᴅs ᴧ ʀᴧηᴅσϻ ᴅᴧʀє sᴛʀɪηɢ
 
-❖ ϻᴧᴅє ʙʏ  ➠ [𝚴 𝐎 𝐁 𝚰 𝐓 𝚲](https://t.me/II_YOUR_NOBITA_II) **
+❖ ϻᴧᴅє ʙʏ  ➠ [𝚴 𝐎 𝐁 𝚰 𝐓 𝚲](https://t.me/II_NOBITA_DEFAULTERS_II) **
 '''
 
 
@@ -229,7 +229,7 @@ class Helper(object):
 ```
 ᴛʜɪs ᴄσϻϻᴧηᴅ ᴡɪʟʟ ᴡσʀᴋ σηʟʏ ɪғ ʏσυ ɢɪᴠє ʙᴧη ʀɪɢʜᴛs ᴛσ ᴛʜє ʙσᴛ ᴡɪᴛʜ ᴧᴅϻɪη```
 
-❖ ϻᴧᴅє ʙʏ  ➠ [𝚴 𝐎 𝐁 𝚰 𝐓 𝚲](https://t.me/II_YOUR_NOBITA_II) **
+❖ ϻᴧᴅє ʙʏ  ➠ [𝚴 𝐎 𝐁 𝚰 𝐓 𝚲](https://t.me/II_NOBITA_DEFAULTERS_II) **
 '''
 
     HELP_15 = '''```
@@ -238,7 +238,7 @@ class Helper(object):
 **❍ /kick <userhandle> : ᴋɪᴄᴋs ᴧ υsєʀ συᴛ σғ ᴛʜє ɢʀσυᴘ, (ᴠɪᴧ ʜᴧηᴅʟє, σʀ ʀєᴘʟʏ)
 ❍ /kickme: ᴋɪᴄᴋs ᴛʜє υsєʀ ᴡʜσ ɪssυєᴅ ᴛʜє ᴄσϻϻᴧηᴅ
 
-❖ ϻᴧᴅє ʙʏ  ➠ [𝚴 𝐎 𝐁 𝚰 𝐓 𝚲](https://t.me/II_YOUR_NOBITA_II) **
+❖ ϻᴧᴅє ʙʏ  ➠ [𝚴 𝐎 𝐁 𝚰 𝐓 𝚲](https://t.me/II_NOBITA_DEFAULTERS_II) **
 '''
 
 
@@ -255,7 +255,7 @@ class Helper(object):
 ```
 ᴛʜɪs ᴄσϻϻᴧηᴅ ᴡɪʟʟ ᴡσʀᴋ σηʟʏ ɪғ ʏσυ ɢɪᴠє ʙᴧη ʀɪɢʜᴛs ᴛσ ᴛʜє ʙσᴛ ᴡɪᴛʜ ᴧᴅϻɪη```
 
-**❖ ϻᴧᴅє ʙʏ  ➠ [𝚴 𝐎 𝐁 𝚰 𝐓 𝚲](https://t.me/II_YOUR_NOBITA_II) **
+**❖ ϻᴧᴅє ʙʏ  ➠ [𝚴 𝐎 𝐁 𝚰 𝐓 𝚲](https://t.me/II_NOBITA_DEFAULTERS_II) **
 '''
 
 
@@ -270,7 +270,7 @@ class Helper(object):
 ❍ /pinned ➠ ᴅɪsᴘʟᴧʏs ᴛʜє ᴘɪηηєᴅ ϻєssᴧɢє ɪη ᴛʜє ɢʀσυᴘ
 ❍ /unpin ➠ υηᴘɪηs ᴛʜє ᴄυʀʀєηᴛʟʏ ᴘɪηηєᴅ ϻєssᴧɢє
 
-❖ ϻᴧᴅє ʙʏ  ➠ [𝚴 𝐎 𝐁 𝚰 𝐓 𝚲](https://t.me/II_YOUR_NOBITA_II) **
+❖ ϻᴧᴅє ʙʏ  ➠ [𝚴 𝐎 𝐁 𝚰 𝐓 𝚲](https://t.me/II_NOBITA_DEFAULTERS_II) **
 '''
 
 
@@ -280,7 +280,7 @@ class Helper(object):
 **❍ /staff ➠ ᴅɪsᴘʟᴧʏs ᴛʜє ʟɪsᴛ σғ sᴛᴧғғ ϻєϻʙєʀs
 ❍ /bots ➠ ᴅɪsᴘʟᴧʏs ᴛʜє ʟɪsᴛ σғ ʙσᴛs ɪη ᴛʜє ɢʀσυᴘ
 
-❖ ϻᴧᴅє ʙʏ  ➠ [𝚴 𝐎 𝐁 𝚰 𝐓 𝚲](https://t.me/II_YOUR_NOBITA_II) **
+❖ ϻᴧᴅє ʙʏ  ➠ [𝚴 𝐎 𝐁 𝚰 𝐓 𝚲](https://t.me/II_NOBITA_DEFAULTERS_II) **
 '''
 
 
@@ -292,7 +292,7 @@ class Helper(object):
 ❍ /setphoto ➠ sєᴛs ᴛʜє ɢʀσυᴘ ᴘʜσᴛσ
 ❍ /removephoto ➠ ʀєϻσᴠєs ᴛʜє ɢʀσυᴘ ᴘʜσᴛσ
 
-❖ ϻᴧᴅє ʙʏ  ➠ [𝚴 𝐎 𝐁 𝚰 𝐓 𝚲](https://t.me/II_YOUR_NOBITA_II) **
+❖ ϻᴧᴅє ʙʏ  ➠ [𝚴 𝐎 𝐁 𝚰 𝐓 𝚲](https://t.me/II_NOBITA_DEFAULTERS_II) **
 '''
 
 
@@ -303,7 +303,7 @@ class Helper(object):
 **❍ /zombies ➠ ʀєϻσᴠєs ᴧᴄᴄ ᴅєʟєᴛєᴅ ϻєϻʙєʀs ғʀσϻ ᴛʜє ɢʀσυᴘ
 
 
-❖ ϻᴧᴅє ʙʏ  ➠ [𝚴 𝐎 𝐁 𝚰 𝐓 𝚲](https://t.me/II_YOUR_NOBITA_II) **
+❖ ϻᴧᴅє ʙʏ  ➠ [𝚴 𝐎 𝐁 𝚰 𝐓 𝚲](https://t.me/II_NOBITA_DEFAULTERS_II) **
 '''
 
 
@@ -320,7 +320,7 @@ class Helper(object):
 ❍ /basket [ʙᴧsᴋєᴛʙᴧʟʟ ɢᴧϻє]
 ❍ /football [ғσσᴛʙᴧʟʟ ɢᴧϻє]
 
-❖ ϻᴧᴅє ʙʏ  ➠ [𝚴 𝐎 𝐁 𝚰 𝐓 𝚲](https://t.me/II_YOUR_NOBITA_II) **
+❖ ϻᴧᴅє ʙʏ  ➠ [𝚴 𝐎 𝐁 𝚰 𝐓 𝚲](https://t.me/II_NOBITA_DEFAULTERS_II) **
 '''
 
 
@@ -331,7 +331,7 @@ class Helper(object):
 ❍ /imposter on
 ❍ /imposter off
 
-❖ ϻᴧᴅє ʙʏ  ➠ [𝚴 𝐎 𝐁 𝚰 𝐓 𝚲](https://t.me/II_YOUR_NOBITA_II) **
+❖ ϻᴧᴅє ʙʏ  ➠ [𝚴 𝐎 𝐁 𝚰 𝐓 𝚲](https://t.me/II_NOBITA_DEFAULTERS_II) **
 '''
 
     HELP_23 = '''```
@@ -339,7 +339,7 @@ class Helper(object):
 
 **❍ /sg ➠ υsєʀ ηᴧϻє ᴧηᴅ υsєʀηᴧϻє ʜɪsᴛσʀʏ
 
-❖ ϻᴧᴅє ʙʏ  ➠ [𝚴 𝐎 𝐁 𝚰 𝐓 𝚲](https://t.me/II_YOUR_NOBITA_II) **
+❖ ϻᴧᴅє ʙʏ  ➠ [𝚴 𝐎 𝐁 𝚰 𝐓 𝚲](https://t.me/II_NOBITA_DEFAULTERS_II) **
 '''
 
     HELP_24 = '''```
@@ -347,7 +347,7 @@ class Helper(object):
 
 **❍ /tr ➠ ᴄᴧη ᴛʀᴧηꜱʟᴧᴛє ϻυʟᴛɪᴘʟє ʟᴧηɢυᴧɢєs
 
-❖ ϻᴧᴅє ʙʏ  ➠ [𝚴 𝐎 𝐁 𝚰 𝐓 𝚲](https://t.me/II_YOUR_NOBITA_II) **
+❖ ϻᴧᴅє ʙʏ  ➠ [𝚴 𝐎 𝐁 𝚰 𝐓 𝚲](https://t.me/II_NOBITA_DEFAULTERS_II) **
 '''
 
 
@@ -363,7 +363,7 @@ class Helper(object):
 
 ❍ /stack ➠ sєᴧʀᴄʜєs ғσʀ ᴘʀσɢʀᴧϻϻɪηɢ-ʀєʟᴧᴛєᴅ ɪηғσʀϻᴧᴛɪση ση sᴛᴧᴄᴋ σᴠєʀғʟσᴡ
 
-❖ ϻᴧᴅє ʙʏ  ➠ [𝚴 𝐎 𝐁 𝚰 𝐓 𝚲](https://t.me/II_YOUR_NOBITA_II) **
+❖ ϻᴧᴅє ʙʏ  ➠ [𝚴 𝐎 𝐁 𝚰 𝐓 𝚲](https://t.me/II_NOBITA_DEFAULTERS_II) **
 '''
 
 
@@ -374,7 +374,7 @@ class Helper(object):
 ❍ /tgm [ʀєᴘʟʏ ᴛσ ᴧηʏ ϻєᴅɪᴧ]
 ❍ /tgt [ʀєᴘʟʏ ᴛσ ᴧηʏ ϻєᴅɪᴧ]
 
-❖ ϻᴧᴅє ʙʏ  ➠ [𝚴 𝐎 𝐁 𝚰 𝐓 𝚲](https://t.me/II_YOUR_NOBITA_II) **
+❖ ϻᴧᴅє ʙʏ  ➠ [𝚴 𝐎 𝐁 𝚰 𝐓 𝚲](https://t.me/II_NOBITA_DEFAULTERS_II) **
 '''
     HELP_PROMOTION = '''
 **───────────────────────
@@ -396,18 +396,18 @@ class Helper(object):
 ʙєsᴛ ᴧηᴅ ᴄʜєᴧᴘ ɪη ᴛєʟєɢʀᴧϻ 400-500+
 ϻєϻʙєʀs ɪη σηє ᴘʀσϻσᴛɪση ɢυʀᴧηᴛєє 
 ───────────────────────
-❍ ᴄσηᴛᴧᴄᴛ - [ 𝚴 𝐎 𝐁 𝚰 𝐓 𝚲 ](https://t.me/II_YOUR_NOBITA_II)
+❍ ᴄσηᴛᴧᴄᴛ - [ 𝚴 𝐎 𝐁 𝚰 𝐓 𝚲 ](https://t.me/II_NOBITA_DEFAULTERS_II)
 ❍ ᴜᴘᴅᴧᴛє - [˹𝐍ᴏʙɪᴛᴀ ꭙ 𝐒ᴜᴘᴘᴏʀᴛ˼](https://t.me/NOBITA_SUPP0RT)
 ───────────────────────**
 '''
     HELP_ALLBOT = '''
 **───────────────────────
-│ ᴡєʟᴄσϻє ᴛσ ˹[𝚴 𝐎 𝐁 𝚰 𝐓 𝚲](https://t.me/II_YOUR_NOBITA_II)˼ ʙσᴛ sᴛᴧᴛυs │
+│ ᴡєʟᴄσϻє ᴛσ ˹[𝚴 𝐎 𝐁 𝚰 𝐓 𝚲](https://t.me/II_NOBITA_DEFAULTERS_II)˼ ʙσᴛ sᴛᴧᴛυs │
 ───────────────────────
     ❖ │ ʀєᴧʟ ᴛɪϻє ʙσᴛ's sᴛᴧᴛυs │❖
 ───────────────────────
 
-╭⎋ [˹ 𝐍ᴏʙɪᴛᴀ ꭙ 𝐌ᴜsɪᴄ ˼](https://t.me/NobitaMusicsRobot) : ᴧʟɪᴠє 
+╭⎋ [˹ 𝐍ᴏʙɪᴛᴀ ꭙ 𝐌ᴜsɪᴄ ˼](https://t.me/NobitaMusiccRobot) : ᴧʟɪᴠє 
 ╰⊚ υᴘᴛɪϻє : 12ʜ:38ϻ:50s | ᴄᴘυ : 5.0% | 
        υsᴧɢє : 24 | ᴧssɪsᴛᴧηᴛs : 01
 
@@ -415,20 +415,16 @@ class Helper(object):
 ╰⊚ υᴘᴛɪϻє : 12ʜ:53ϻ:29s | ᴄᴘυ : 5.0% | 
        υsᴧɢє : 24 | ᴧssɪsᴛᴧηᴛs : 01
 
-╭⎋ [˹ 𝐒ɪɢᴍᴀ ꭙ 𝐌ᴜsɪᴄ ˼ ♪](https://t.me/SigmaMusicsBot) : ᴧʟɪᴠє 
-╰⊚ υᴘᴛɪϻє : 12ʜ:53ϻ:29s | ᴄᴘυ : 5.0% | 
-       υsᴧɢє : 24 | ᴧssɪsᴛᴧηᴛs : 01
-
-╭⎋ [˹ 𝐀ᴘᴘʟᴇ ꭙ 𝐌ᴜsɪᴄ ˼ ♪](https://t.me/AppleMusicRobot) : ᴧʟɪᴠє 
+╭⎋ [˹ 𝐀ᴜʀᴀ ꭙ 𝐌ᴜsɪᴄ ˼ ♪](https://t.me/AuraMusiccRobot) : ᴧʟɪᴠє 
 ╰⊚ υᴘᴛɪϻє : 12ʜ:53ϻ:29s | ᴄᴘυ : 5.0% | 
        υsᴧɢє : 24 | ᴧssɪsᴛᴧηᴛs : 01
 
 ───────────────────────
 ⊚ ʙσᴛ sᴛᴧᴛυs ᴧηᴅ ϻσʀє ʙσᴛs - [ᴄʟɪᴄᴋ ϻє](https://t.me/NOBITA_SUPP0RT/6)
 ───────────────────────
-⊚ ʟᴧsᴛ ᴄʜєᴄᴋєᴅ ση : ᴅᴧᴛє : 01 Jan 2026
+⊚ ʟᴧsᴛ ᴄʜєᴄᴋєᴅ ση : ᴅᴧᴛє : 10 may 2026
 ───────────────────────
-❍ ᴘσᴡєʀєᴅ ʙʏ ⁚ ˹ [𝚴 𝐎 𝐁 𝚰 𝐓 𝚲](https://t.me/II_YOUR_NOBITA_II) ˼
+❍ ᴘσᴡєʀєᴅ ʙʏ ⁚ ˹ [𝚴 𝐎 𝐁 𝚰 𝐓 𝚲](https://t.me/II_NOBITA_DEFAULTERS_II) ˼
 ───────────────────────**
 '''
     HELP_ABOUT = '''
@@ -449,9 +445,9 @@ class Helper(object):
 ● ᴧɪ ɪηᴛєɢʀᴧᴛɪση
 ───────────────────────
 ❖ υᴘᴅᴧᴛєs ᴄʜᴧηηєʟ ➥ [˹𝐍ᴏʙɪᴛᴀ ꭙ 𝐒ᴜᴘᴘᴏʀᴛ˼](https://t.me/NOBITA_SUPP0RT)
-❖ sυᴘᴘσʀᴛ ᴄʜᴧᴛ ➥ [Dᴇғᴀᴜʟᴛᴇʀs](https://t.me/+wtkHZMKvOERiMzY1)
-❖ ʀєᴧʟ σᴡηєʀ ➥ [𝚴 𝐎 𝐁 𝚰 𝐓 𝚲](https://t.me/II_YOUR_NOBITA_II)
-❖ ʀєᴘσ ʟɪηᴋ ➥ [ᴄʟɪᴄᴋ ϻє](https://t.me/NOBITA_SUPP0RT)
+❖ sυᴘᴘσʀᴛ ᴄʜᴧᴛ ➥ [Dᴇғᴀᴜʟᴛᴇʀs](https://t.me/+S0Q1-J_EQLA3YmU1)
+❖ ʀєᴧʟ σᴡηєʀ ➥ [𝚴 𝐎 𝐁 𝚰 𝐓 𝚲](https://t.me/II_NOBITA_DEFAULTERS_II)
+❖ ʀєᴘσ ʟɪηᴋ ➥ [ᴄʟɪᴄᴋ ϻє](https://t.me/NOBITA_SUPP0RT/15)
 ───────────────────────
 ❖ ᴄʟɪᴄᴋ ση ᴛʜє ʜєʟᴩ ʙυᴛᴛση ᴛσ ɢєᴛ ɪηғσ
     ᴧʙσυᴛ ϻʏ ϻσᴅυʟєs ᴧηᴅ ᴄσϻϻᴧηᴅs...!
