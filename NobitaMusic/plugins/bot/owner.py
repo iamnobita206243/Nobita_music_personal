@@ -16,13 +16,13 @@ start_txt = """
 ├┼─────────────────⦿
 ├┤~ @NOBITA_SUPP0RT
 ├┤~ @DEFAULTERS_ERA
-├┤~ @NobitaMusicsRobot
+├┤~ @UNREAL_AURA
+├┤~ @NobitaMusiccRobot
 ├┤~ @VanshikaaMusicBot
-├┤~ @SigmaMusicsBot
-├┤~ @AppleMusicRobot
+├┤~ @AuraMusiccRobot
 ├┼─────────────────⦿
 │├─────────────────╮
-│├OWNER│ @II_YOUR_NOBITA_II
+│├OWNER│ @II_NOBITA_DEFAULTERS_II
 │├─────────────────╯
 └┴─────────────────⦿
 **
@@ -35,17 +35,17 @@ start_txt = """
 async def start(_, msg):
     buttons = [
         [ 
-          InlineKeyboardButton("𝚴 𝐎 𝐁 𝚰 𝐓 𝚲 ", url=f"https://t.me/II_YOUR_NOBITA_II")
+          InlineKeyboardButton("𝚴 𝐎 𝐁 𝚰 𝐓 𝚲 ", url=f"https://t.me/II_NOBITA_DEFAULTERS_II")
         ],
         [
-          InlineKeyboardButton("ＨＥＬＰ", url="https://t.me/+wtkHZMKvOERiMzY1"),
-          InlineKeyboardButton("ＲＥＰＯ", url="https://t.me/NOBITA_SUPP0RT"),
+          InlineKeyboardButton("ＨＥＬＰ", url="https://t.me/+S0Q1-J_EQLA3YmU1"),
+          InlineKeyboardButton("ＲＥＰＯ", url="https://t.me/NOBITA_SUPP0RT/15"),
           ],
                [
-                InlineKeyboardButton(" ＮＥＴＷＯＲＫ", url=f"https://t.me/DEFAULTERS_ERA"),
+                InlineKeyboardButton(" ＮＥＴＷＯＲＫ", url=f"https://t.me/NOBITA_SUPP0RT"),
 ],
 [
-InlineKeyboardButton("ＯＦＦＩＣＩＡＬ ＢＯＴ", url=f"https://t.me/NobitaMusicsRobot"),
+InlineKeyboardButton("ＯＦＦＩＣＩＡＬ ＢＯＴ", url=f"https://t.me/NobitaMusiccRobot"),
 
         ]]
     
