@@ -4,7 +4,7 @@ from pyrogram import filters, enums
 from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton
 from NobitaMusic.utils.SACHIN_BAN import admin_filter
 
-BOT_ID = "8399053049"
+BOT_ID = "8264418531"
 
 @app.on_message(filters.command("unbanall") & admin_filter)
 async def unban_all(_, msg):
