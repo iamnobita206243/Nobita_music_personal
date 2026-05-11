@@ -15,7 +15,6 @@ from pyrogram.types import Message
 from youtubesearchpython import VideosSearch
 from youtubesearchpython import SearchVideos
 import re
-from pykeyboard import InlineKeyboard
 from pyrogram.enums import ChatAction
 from pyrogram.types import (InlineKeyboardButton,
                             InlineKeyboardMarkup, InputMediaAudio,
