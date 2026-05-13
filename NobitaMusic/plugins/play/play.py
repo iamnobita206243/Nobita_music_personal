@@ -306,7 +306,7 @@ async def play_commnd(
                 ex_type = type(e).__name__
                 err = e if ex_type == "AssistantErr" else _["general_2"].format(ex_type)
                 return await mystic.edit_text(err)
-            return await play_logs(message, streamtype="M3u8 or Index Link")
+            return await play_logs(message, streamtype="M3u8 or Index Link") 
     else:
         if len(message.command) < 2:
             buttons = botplaylist_markup(_)
@@ -314,8 +314,19 @@ async def play_commnd(
                 _["play_18"],
                 reply_markup=InlineKeyboardMarkup(buttons),
             )
-        slider = True
+        
+        # 1. Pehle message se text (query) nikalein
         query = message.text.split(None, 1)[1]
+
+        # 2. YAHAN YE NAYA CODE JODEIN (Link Block karne ke liye)
+        if "http" in query or "youtube.com" in query or "youtu.be" in query:
+            return await mystic.edit_text("❌ **YouTube Links are blocked!**\n\nSirf gaane ka naam likh kar search karein.")
+
+        # 3. Baaki code niche waise hi rehne dein
+        slider = True
+        if "-v" in query:
+            query = query.replace("-v", "")
+            
         if "-v" in query:
             query = query.replace("-v", "")
         try:
