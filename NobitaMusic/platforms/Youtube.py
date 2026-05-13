@@ -229,26 +229,7 @@ class YouTubeAPI:
         except Exception as e:
             return 0, f"Video download error: {e}"
 
-    async def playlist(self, link, limit, user_id, videoid: Union[bool, str] = None):
-        if videoid:
-            link = self.listbase + link
-        if "&" in link:
-            link = link.split("&")[0]
-        try:
-            plist = await Playlist.get(link)
-        except:
-            return []
-
-        videos = plist.get("videos") or []
-        ids = []
-        for data in videos[:limit]:
-            if not data:
-                continue
-            vid = data.get("id")
-            if not vid:
-                continue
-            ids.append(vid)
-        return ids
+    
 
     async def track(self, link: str, videoid: Union[bool, str] = None):
         if videoid:
