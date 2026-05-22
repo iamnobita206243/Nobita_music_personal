@@ -26,21 +26,21 @@ from config import BANNED_USERS
 from strings import get_string
 
 NEXIO = [
-    "https://files.catbox.moe/jrupn9.jpg",
-    "https://files.catbox.moe/5z141p.jpg",
-    "https://files.catbox.moe/fnl0h7.jpg",
-    "https://files.catbox.moe/1lz1go.jpg",
-    "https://files.catbox.moe/avackl.jpg",
-    "https://files.catbox.moe/1yrzwz.jpg",
-    "https://files.catbox.moe/6y22qw.jpg",
-    "https://files.catbox.moe/gnnsf2.jpg",
-    "https://files.catbox.moe/ss6r60.jpg",
-    "https://files.catbox.moe/yuob18.jpg",
-    "https://files.catbox.moe/i9xrrp.jpg",
-    "https://files.catbox.moe/a9tx8f.jpg"
-    "https://files.catbox.moe/wlt26x.jpg",
-    "https://files.catbox.moe/c1lylh.jpg",
-    "https://files.catbox.moe/82eymp.jpg",
+    "https://files.catbox.moe/z0t5m3.jpg",
+    "https://files.catbox.moe/i3w4c4.jpg",
+    "https://files.catbox.moe/zx7hw8.jpg",
+    "https://files.catbox.moe/qbwbt7.jpg",
+    "https://files.catbox.moe/v1p9q6.jpg",
+    "https://files.catbox.moe/if9cv3.jpg",
+    "https://files.catbox.moe/su9j6p.jpg",
+    "https://files.catbox.moe/8bqidl.jpg",
+    "https://files.catbox.moe/hp7y5c.jpg",
+    "https://files.catbox.moe/pnkkh3.jpg",
+    "https://files.catbox.moe/w7chj6.jpg",
+    "https://files.catbox.moe/v6t4tq.jpg"
+    "https://files.catbox.moe/z4fz2y.jpg",
+    "https://files.catbox.moe/78x5lm.jpg",
+    "https://files.catbox.moe/0nwywt.jpg",
 ]
 
 HIMANSHI = [
